@@ -7,11 +7,30 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
   const imgLoader = {
     test: /\.(png|jpg|jpeg|gif)$/i,
     type: 'asset/resource',
-  }
+  };
 
   const svgLoader = {
     test: /\.svg$/,
     use: ['@svgr/webpack'],
+  };
+  const babelLoader = {
+    test: /\.(js|jsx|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env'],
+        'plugins': [
+          [
+            'i18next-extract',
+            {
+              locales: ['en', 'ru'],
+              keyAsDefaultValue: true,
+            }
+          ]
+        ]
+      }
+    }
   };
   const cssLoader = {
     test: /\.s[ac]ss$/i,
@@ -25,7 +44,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
             localIdentName: isDev
               ? '[path][name]__[local]--[hash:base64:5]'
               : '[hash:base64:8]'
-          }
+          },
         }
       },
       'sass-loader',
@@ -41,6 +60,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
   return [
     imgLoader,
     svgLoader,
+    babelLoader,
     typescriptLoader,
     cssLoader
   ];
