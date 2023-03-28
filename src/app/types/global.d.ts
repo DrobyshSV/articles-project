@@ -6,16 +6,17 @@ declare module '*.scss' {
   export = classNames;
 }
 
-declare module "*.jpg" {
+declare module '*.jpg' {
   const path: string;
   export default path;
 }
 
-declare module "*.png" {
+declare module '*.png' {
   const path: string;
   export default path;
 }
 declare module '*.svg' {
+  // eslint-disable-next-line no-undef
   const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   export default content;
 }
