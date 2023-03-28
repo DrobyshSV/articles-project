@@ -1,5 +1,9 @@
 {
+  "MainPage": "MainPage",
   "Not_Found": "Not_Found",
+  "SomethingWasWrong": "SomethingWasWrong",
+  "Update page": "Update page",
   "lang": "lang",
+  "throw error": "throw error",
   "Страница не найдена": "Страница не найдена"
 }
