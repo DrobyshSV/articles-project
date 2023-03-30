@@ -1,6 +1,8 @@
 {
+  "About": "About",
   "About Page": "",
   "AboutPage": "",
+  "Main": "Main",
   "Main Page": "",
   "MainPage": "MainPage",
   "Not_Found": "Not_Found",
@@ -9,5 +11,7 @@
   "Update page": "Update page",
   "lang": "lang",
   "throw error": "throw error",
+  "Главная": "",
+  "О сайте": "",
   "Страница не найдена": "Страница не найдена"
 }
