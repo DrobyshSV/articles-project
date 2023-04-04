@@ -4,6 +4,8 @@
   "AboutPage": "",
   "Add password": "Add password",
   "Add username": "Add username",
+  "Auth form": "Auth form",
+  "Logout": "",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
@@ -18,6 +20,7 @@
   "SomethingWasWrong": "SomethingWasWrong",
   "TOGGLE": "",
   "Update page": "Update page",
+  "Wrong password or login": "Wrong password or login",
   "decrement": "decrement",
   "increment": "increment",
   "lang": "lang",
