@@ -2,6 +2,8 @@
   "About": "About",
   "About Page": "About Page",
   "AboutPage": "AboutPage",
+  "Add password": "Add password",
+  "Add username": "Add username",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
@@ -12,6 +14,7 @@
   "MainPage": "MainPage",
   "Not_Found": "Not_Found",
   "Sigh in": "Sigh in",
+  "Sign in": "Sign in",
   "SomethingWasWrong": "SomethingWasWrong",
   "Update page": "Update page",
   "decrement": "decrement",
