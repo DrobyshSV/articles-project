@@ -1,12 +1,12 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import React, {memo, useMemo, useState} from 'react';
+import React, { memo, useMemo, useState } from 'react';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { useTranslation } from 'react-i18next';
 import { Button, ButtonSize, ThemeButton } from 'shared/ui/Button/Button';
 import styles from './Sidebar.module.scss';
-import {SidebarItem} from '../SidebarItem/SidebarItem';
-import {SidebarItemsList} from '../../model/items';
+import { SidebarItem } from '../SidebarItem/SidebarItem';
+import { SidebarItemsList } from '../../model/items';
 
 interface SidebarProps {
   className?: string;

@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import React, {memo} from 'react';
+import React, { memo } from 'react';
 import { Theme, useTheme } from 'app/providers/ThemeProvider';
 
 import DarkIcon from 'shared/assets/icons/switcher-dark-theme-svg.svg';

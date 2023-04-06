@@ -27,7 +27,7 @@ export const routerConfig: Record<AppRoutes, RouteProps> = {
     path: RouterPath.about,
     element: <AboutPage />,
   },
-[AppRoutes.PROFILE]: {
+  [AppRoutes.PROFILE]: {
     path: RouterPath.profile,
     element: <ProfilePage />,
   },

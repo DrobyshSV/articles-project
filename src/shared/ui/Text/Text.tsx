@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
+import { memo } from 'react';
 import cls from './Text.module.scss';
-import {memo} from 'react';
 
 export enum TextTheme {
   PRIMARY = 'primary',
