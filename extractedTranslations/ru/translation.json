@@ -5,6 +5,9 @@
   "Add password": "Add password",
   "Add username": "Add username",
   "Auth form": "Auth form",
+  "Edit": "Edit",
+  "First Name": "First Name",
+  "Last Name": "Last Name",
   "Logout": "Logout",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
@@ -15,6 +18,7 @@
   "Main Page": "Main Page",
   "MainPage": "MainPage",
   "Not_Found": "Not_Found",
+  "Profile": "Profile",
   "Profile page": "Profile page",
   "Sigh in": "Sigh in",
   "Sign in": "Sign in",
