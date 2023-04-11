@@ -4,7 +4,7 @@ import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { Input } from 'shared/ui/Input/Input';
 import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
-import { Text, TextTheme } from 'shared/ui/Text/Text';
+import { Text, ThemeText } from 'shared/ui/Text/Text';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from 'shared/config/hooks/useAppDispatch/useAppDispatch';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
@@ -55,7 +55,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
     >
       <div className={classNames(styles.LoginForm, {}, [className])}>
         <Text title={t('Auth form')} />
-        {error && <Text text={t('Wrong password or login')} theme={TextTheme.ERROR} />}
+        {error && <Text text={t('Wrong password or login')} theme={ThemeText.ERROR} />}
         <Input
           autofocus
           type="text"
