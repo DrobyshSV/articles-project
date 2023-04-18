@@ -6,6 +6,7 @@
   "Add password": "Add password",
   "Add user name": "Add user name",
   "Add username": "Add username",
+  "Article not found": "Article not found",
   "ArticleDetailsPage": "ArticleDetailsPage",
   "ArticlesPage": "ArticlesPage",
   "Auth form": "Auth form",
@@ -59,6 +60,9 @@
   "О сайте": "",
   "Попробуйте обновить страницу": "Попробуйте обновить страницу",
   "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
+  "Произошла ошибка при загрузке статьи": {
+    "": ""
+  },
   "Профиль": "Профиль",
   "Страница не найдена": "Страница не найдена"
 }
