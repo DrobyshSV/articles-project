@@ -11,6 +11,7 @@
   "ArticleDetailsPage": "ArticleDetailsPage",
   "ArticlesPage": "ArticlesPage",
   "Auth form": "Auth form",
+  "Back to list": "",
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
@@ -36,6 +37,13 @@
   "Point to the currency": "",
   "Profile": "Profile",
   "Profile page": "",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Save": "Save",
   "Send": "",
   "Server error after saving": "Server error after saving",
