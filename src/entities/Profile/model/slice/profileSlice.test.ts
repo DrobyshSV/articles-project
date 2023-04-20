@@ -9,6 +9,7 @@ import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 
 const data = {
+  id: '1',
   username: 'admin',
   age: 33,
   country: Country.Belarus,

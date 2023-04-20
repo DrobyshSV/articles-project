@@ -38,7 +38,7 @@ export const routerConfig: Record<AppRoutes, AppRoutesProps> = {
     element: <AboutPage />,
   },
   [AppRoutes.PROFILE]: {
-    path: RouterPath.profile,
+    path: `${RouterPath.profile}/:id`,
     element: <ProfilePage />,
     authOnly: true,
   },

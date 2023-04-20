@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -88,7 +90,6 @@
       "text": "some comment",
       "articleId": "1",
       "userId": "1"
-
     },
     {
       "id": "2",
@@ -101,6 +102,18 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "11112222",
+      "id": "BY09veT"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "3344",
+      "id": "z1BzjBK"
     }
   ],
   "users": [
@@ -119,14 +132,28 @@
       "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
     }
   ],
-  "profile": {
-    "first": "Siarhei",
-    "lastname": "Drobysh",
-    "age": 33,
-    "currency": "BYN",
-    "country": "Belarus",
-    "city": "Minsk",
-    "username": "admin123",
-    "avatar": "https://thumbs.dreamstime.com/b/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "Siarhei",
+      "lastname": "Drobysh",
+      "age": 33,
+      "currency": "BYN",
+      "country": "Belarus",
+      "city": "Minsk",
+      "username": "admin123",
+      "avatar": "https://thumbs.dreamstime.com/b/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg"
+    },
+    {
+      "id": "2",
+      "firstname": "Viktar",
+      "lastname": "Drobysh",
+      "age": 46,
+      "currency": "BYN",
+      "country": "Belarus",
+      "city": "Minsk",
+      "username": "admin123",
+      "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
+    }
+  ]
 }
