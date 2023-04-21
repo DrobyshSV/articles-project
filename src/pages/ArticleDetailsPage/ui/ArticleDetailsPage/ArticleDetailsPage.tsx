@@ -11,6 +11,7 @@ import { useInitialEffect } from 'shared/config/hooks/useInitialEffect/useInitia
 import { AddCommentForm } from 'features/addCommentForm';
 import { RouterPath } from 'shared/config/routeConfig/routeConfig';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Page } from 'shared/ui/Page/Page';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import {
@@ -52,15 +53,15 @@ const ArticleDetailsPage = memo(({ className }: ArticleDetailsPageProps) => {
 
   if (!id) {
     return (
-      <div className={classNames(styles.ArticleDetailsPage, {}, [className])}>
+      <Page className={classNames(styles.ArticleDetailsPage, {}, [className])}>
         {t('Article not found')}
-      </div>
+      </Page>
     );
   }
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames(styles.ArticleDetailsPage, {}, [className])}>
+      <Page className={classNames(styles.ArticleDetailsPage, {}, [className])}>
         <Button theme={ThemeButton.OUTLINE} onClick={onBackToList}>
           {t('Back to list')}
         </Button>
@@ -71,7 +72,7 @@ const ArticleDetailsPage = memo(({ className }: ArticleDetailsPageProps) => {
           isLoading={commentsIsLoading}
           comments={comments}
         />
-      </div>
+      </Page>
     </DynamicModuleLoader>
   );
 });
