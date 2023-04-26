@@ -11,10 +11,12 @@ import { ArticleDetailsSchema } from 'entities/Article';
 import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage/model/types/ArticleDetailsCommentsSchema';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
+import { scrollSaveSchema } from 'features/scrollSave';
 
 export interface StateSchema {
   counter: CounterSchema;
   user: UserSchema;
+  scrollSave: scrollSaveSchema;
   // Async reducers
   loginForm?: LoginSchema;
   profile?: ProfileSchema;
