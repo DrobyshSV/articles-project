@@ -4,6 +4,7 @@ import styles from './Text.module.scss';
 
 export enum ThemeText {
   PRIMARY = 'primary',
+  INVERTED = 'inverted',
   ERROR = 'error',
 }
 export enum AlignText {

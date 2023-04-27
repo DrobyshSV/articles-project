@@ -18,8 +18,11 @@
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
+  "Create new article": "Create new article",
+  "DROBYSH PRODUCTION": "DROBYSH PRODUCTION",
   "Economic": "Economic",
   "Edit": "Edit",
+  "Edit article with ID = ": "Edit article with ID = ",
   "Enter your Nickname": "Enter your Nickname",
   "First Name": "First Name",
   "IT": "IT",
@@ -94,6 +97,7 @@
     "": ""
   },
   "Профиль": "Профиль",
+  "Создать статью": "Создать статью",
   "Страница не найдена": "Страница не найдена",
   "Экономика": "Экономика",
   "убыванию": "убыванию"
