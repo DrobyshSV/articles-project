@@ -1,6 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
+import { Text, SizeText } from 'shared/ui/Text/Text';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import styles from './ArticleList.module.scss';
@@ -37,6 +38,13 @@ export const ArticleList = memo((props: ArticleListProps) => {
     />
   );
 
+  if (!isLoading && !articles.length) {
+    return (
+      <div className={classNames(styles.ArticleList, {}, [className, styles[view]])}>
+        <Text size={SizeText.L} title={t('Articles not found')} />
+      </div>
+    );
+  }
   return (
     <div className={classNames(styles.ArticleList, {}, [className, styles[view]])}>
       {articles.length > 0
