@@ -1,6 +1,6 @@
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { memo, useCallback } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
@@ -9,8 +9,6 @@ import { SizeText, Text } from 'shared/ui/Text/Text';
 import { CommentList } from 'entities/Comment';
 import { useInitialEffect } from 'shared/config/hooks/useInitialEffect/useInitialEffect';
 import { AddCommentForm } from 'features/addCommentForm';
-import { RouterPath } from 'shared/config/routeConfig/routeConfig';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { Page } from 'widgets/Page/Page';
 import { ArticleDetailsPageHeader } from 'pages/ArticleDetailsPage/ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { getArticleRecommendationsIsLoading } from '../../model/selectors/recommendations';

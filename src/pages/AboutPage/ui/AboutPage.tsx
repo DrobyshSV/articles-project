@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from 'widgets/Page/Page';
 
@@ -6,13 +6,13 @@ interface AboutPageProps {
   className?: string
 }
 
-const AboutPage = memo(({ className }: AboutPageProps) => {
+const AboutPage = ({ className }: AboutPageProps) => {
   const { t } = useTranslation();
   return (
-    <Page>
+    <Page className={className}>
       {t('AboutPage')}
     </Page>
   );
-});
+};
 
 export default AboutPage;
