@@ -7,11 +7,11 @@ import { LoginSchema } from 'features/AuthByUsername/model/types/loginSchema';
 import { CombinedState } from 'redux';
 import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
-import { ArticleDetailsSchema } from 'entities/Article';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { scrollSaveSchema } from 'features/scrollSave';
 import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage';
+import { ArticleDetailsSchema } from 'entities/Article/model/types/ArticleDetailsSchema';
 
 export interface StateSchema {
   counter: CounterSchema;
