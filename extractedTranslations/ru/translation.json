@@ -1,6 +1,4 @@
 {
-  "About": "About",
-  "About Page": "About Page",
   "AboutPage": "AboutPage",
   "Add comment": "Add comment",
   "Add link of avatar": "Add link of avatar",
@@ -9,34 +7,24 @@
   "Add username": "Add username",
   "All articles": "All articles",
   "Article not found": "Article not found",
-  "ArticleDetailsPage": "ArticleDetailsPage",
   "Articles not found": "Articles not found",
-  "ArticlesPage": "ArticlesPage",
   "Auth form": "Auth form",
   "BY": "BY",
   "Back to list": "Back to list",
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
+  "Create article": "Create article",
   "Create new article": "Create new article",
   "DROBYSH PRODUCTION": "DROBYSH PRODUCTION",
   "Economic": "Economic",
   "Edit": "Edit",
   "Edit article with ID = ": "Edit article with ID = ",
   "Enter your Nickname": "Enter your Nickname",
-  "First Name": "First Name",
   "IT": "IT",
   "Incorrect age": "Incorrect age",
   "Incorrect region": "Incorrect region",
-  "Last Name": "Last Name",
   "Logout": "Logout",
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
-      "": ""
-    }
-  },
-  "Main": "Main",
-  "Main Page": "Main Page",
   "MainPage": "MainPage",
   "No comments": "No comments",
   "No data": "No data",
@@ -44,7 +32,6 @@
   "Point to the country": "Point to the country",
   "Point to the currency": "Point to the currency",
   "Profile": "Profile",
-  "Profile page": "Profile page",
   "Read more": {
     "": {
       "": {
@@ -58,8 +45,8 @@
   "Search": "Search",
   "Send": "Send",
   "Server error after saving": "Server error after saving",
-  "Sigh in": "Sigh in",
   "Sign in": "Sign in",
+  "Some error": "Some error",
   "Something has gone wrong": "Something has gone wrong",
   "SomethingWasWrong": "SomethingWasWrong",
   "Sort BY": "Sort BY",
@@ -74,31 +61,7 @@
   "decrement": "decrement",
   "increase": "increase",
   "increment": "increment",
-  "lang": "lang",
-  "raising": "raising",
   "throw error": "throw error",
   "title": "title",
-  "views": "views",
-  "Айти": "Айти",
-  "Ваш возраст": "Ваш возраст",
-  "Ваша фамилия": "Ваша фамилия",
-  "Ваше имя": "Ваше имя",
-  "Введите имя пользователя": "Введите имя пользователя",
-  "Введите ссылку на аватар": "Введите ссылку на аватар",
-  "Все статьи": "Все статьи",
-  "Главная": "Главная",
-  "Город": "Город",
-  "Наука": "Наука",
-  "О сайте": "О сайте",
-  "Поиск": "Поиск",
-  "Попробуйте обновить страницу": "Попробуйте обновить страницу",
-  "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
-  "Произошла ошибка при загрузке статьи": {
-    "": ""
-  },
-  "Профиль": "Профиль",
-  "Создать статью": "Создать статью",
-  "Страница не найдена": "Страница не найдена",
-  "Экономика": "Экономика",
-  "убыванию": "убыванию"
+  "views": "views"
 }
