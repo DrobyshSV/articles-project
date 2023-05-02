@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { CommentCard } from 'entities/Comment/ui/CommentCard/CommentCard';
+import { CommentCard } from './CommentCard';
 
 export default {
   title: 'entities/Comment/CommentCard',

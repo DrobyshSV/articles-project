@@ -10,7 +10,7 @@ import { CommentList } from 'entities/Comment';
 import { useInitialEffect } from 'shared/config/hooks/useInitialEffect/useInitialEffect';
 import { AddCommentForm } from 'features/addCommentForm';
 import { Page } from 'widgets/Page/Page';
-import { ArticleDetailsPageHeader } from 'pages/ArticleDetailsPage/ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader';
+import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { getArticleRecommendationsIsLoading } from '../../model/selectors/recommendations';
 import {
   fetchArticleRecommendations,
