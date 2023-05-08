@@ -29,7 +29,7 @@ export const ArticleDetailsPageHeader = memo((props: ArticleDetailsPageHeaderPro
   }, [article?.id, navigate]);
 
   return (
-    <HStack justify="center" max className={classNames('', {}, [className])}>
+    <HStack justify="between" max className={classNames('', {}, [className])}>
       <Button theme={ThemeButton.OUTLINE} onClick={onBackToList}>
         {t('Back to list')}
       </Button>

@@ -3,20 +3,22 @@ import {
 } from '@reduxjs/toolkit';
 import { CounterSchema } from 'entities/Counter';
 import { UserSchema } from 'entities/User';
-import { LoginSchema } from 'features/AuthByUsername/model/types/loginSchema';
 import { CombinedState } from 'redux';
-import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { scrollSaveSchema } from 'features/scrollSave';
 import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage';
-import { ArticleDetailsSchema } from 'entities/Article/model/types/ArticleDetailsSchema';
+import { rtkApi } from 'shared/api/rtkApi';
+import { ArticleDetailsSchema } from 'entities/Article';
+import { LoginSchema } from 'features/AuthByUsername';
+import { ProfileSchema } from 'features/editableProfileCard';
 
 export interface StateSchema {
   counter: CounterSchema;
   user: UserSchema;
   scrollSave: scrollSaveSchema;
+  [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>
   // Async reducers
   loginForm?: LoginSchema;
   profile?: ProfileSchema;

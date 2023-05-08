@@ -6,6 +6,7 @@
   "Add user name": "Add user name",
   "Add username": "Add username",
   "All articles": "All articles",
+  "Article load error": "Article load error",
   "Article not found": "Article not found",
   "Articles not found": "Articles not found",
   "Auth form": "Auth form",
@@ -32,6 +33,7 @@
   "Point to the country": "Point to the country",
   "Point to the currency": "Point to the currency",
   "Profile": "Profile",
+  "Profile not found": "Profile not found",
   "Read more": {
     "": {
       "": {
@@ -63,5 +65,6 @@
   "increment": "increment",
   "throw error": "throw error",
   "title": "title",
-  "views": "views"
+  "views": "views",
+  "Профиль не найден": "Профиль не найден"
 }
