@@ -1423,6 +1423,18 @@
       "userId": "1",
       "text": "ссс",
       "id": "kzWm--d"
+    },
+    {
+      "articleId": "2",
+      "userId": "2",
+      "text": "ss",
+      "id": "CaVJWqq"
+    },
+    {
+      "articleId": "2",
+      "userId": "2",
+      "text": "sss",
+      "id": "3dOHVPa"
     }
   ],
   "users": [
@@ -1430,21 +1442,27 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": ["ADMIN"],
+      "roles": [
+        "ADMIN"
+      ],
       "avatar": "https://thumbs.dreamstime.com/b/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "roles": ["USER"],
+      "roles": [
+        "USER"
+      ],
       "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
     },
     {
       "id": "3",
       "username": "manager",
       "password": "123",
-      "roles": ["MANAGER"],
+      "roles": [
+        "MANAGER"
+      ],
       "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
     }
   ],

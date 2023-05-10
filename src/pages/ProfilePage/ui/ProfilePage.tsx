@@ -17,7 +17,6 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
   if (!id) {
     return <Text text={t('Profile not found')} />;
   }
-
   return (
     <Page className={classNames('', {}, [className])}>
       <VStack gap="16" max>
