@@ -13,7 +13,7 @@ import styles from './ArticleDetailsPage.module.scss';
 import { articleDetailsPageReducer } from '../../model/slices';
 
 interface ArticleDetailsPageProps {
-  className?: string
+  className?: string;
 }
 
 const reducers: ReducersList = {
@@ -23,14 +23,6 @@ const reducers: ReducersList = {
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
   const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
-
-  if (!id) {
-    return (
-      <Page className={classNames(styles.ArticleDetailsPage, {}, [className])}>
-        {t('Article not found')}
-      </Page>
-    );
-  }
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
