@@ -12,7 +12,7 @@ export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelecto
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 export { getArticleDetailsData } from './model/selectors/articleDetails';
 
-export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
+export type { ArticleDetailsSchema } from './model/types/ArticleDetailsSchema';
 export {
   ArticleView, ArticleType, ArticleBlockType, ArticleSortField,
 } from './model/consts/consts';
