@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { memo, ReactNode, useCallback } from 'react';
-import { Card, CardTheme } from '../Card/Card';
+import { Card, ThemeCard } from '../Card/Card';
 import styles from './Tabs.module.scss';
 
 export interface TabItem {
@@ -28,7 +28,7 @@ export const Tabs = memo((props: TabsProps) => {
     <div className={classNames(styles.Tabs, {}, [className])}>
       {tabs.map((tab) => (
         <Card
-          theme={tab.value === value ? CardTheme.NORMAL : CardTheme.OUTLINED}
+          theme={tab.value === value ? ThemeCard.NORMAL : ThemeCard.OUTLINED}
           className={styles.tab}
           key={tab.value}
           onClick={clickHandle(tab)}

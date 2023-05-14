@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { HTMLAttributes, memo, ReactNode } from 'react';
 import styles from './Card.module.scss';
 
-export enum CardTheme {
+export enum ThemeCard {
   NORMAL = 'normal',
   OUTLINED = 'outlined',
 }
@@ -10,12 +10,12 @@ export enum CardTheme {
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
   children: ReactNode;
-  theme?: CardTheme;
+  theme?: ThemeCard;
 }
 
 export const Card = memo((props: CardProps) => {
   const {
-    className, children, theme = CardTheme.NORMAL, ...otherProps
+    className, children, theme = ThemeCard.NORMAL, ...otherProps
   } = props;
 
   return (
