@@ -1,9 +1,9 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { memo } from 'react';
-import ListIcon from 'shared/assets/icons/list-items-icon.svg';
-import CardsGridIcon from 'shared/assets/icons/cards-grid-icon.svg';
-import { Icon } from 'shared/ui/Icon/Icon';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import ListIcon from '@/shared/assets/icons/list-items-icon.svg';
+import CardsGridIcon from '@/shared/assets/icons/cards-grid-icon.svg';
+import { Icon } from '@/shared/ui/Icon/Icon';
+import { Button, ThemeButton } from '@/shared/ui/Button/Button';
 import { ArticleView } from '../../model/consts/consts';
 import styles from './ArticleViewSelector.module.scss';
 
