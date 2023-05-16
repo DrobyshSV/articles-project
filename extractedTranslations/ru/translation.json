@@ -16,6 +16,7 @@
   "Back to list": "Back to list",
   "Cancel": "Cancel",
   "City": "City",
+  "Close": "Close",
   "Comments": "Comments",
   "Create article": "Create article",
   "Create new article": "Create new article",
@@ -27,6 +28,7 @@
   "IT": "IT",
   "Incorrect age": "Incorrect age",
   "Incorrect region": "Incorrect region",
+  "Leave your feedback about the article, it will help improve the quality": "Leave your feedback about the article, it will help improve the quality",
   "Logout": "Logout",
   "MainPage": "MainPage",
   "No comments": "No comments",
@@ -36,6 +38,7 @@
   "Point to the currency": "Point to the currency",
   "Profile": "Profile",
   "Profile not found": "Profile not found",
+  "Rate the article": "Rate the article",
   "Read more": {
     "": {
       "": {
@@ -61,6 +64,7 @@
   "Your First Name": "Your First Name",
   "Your Last Name": "Your Last Name",
   "Your age": "Your age",
+  "Your review": "Your review",
   "created": "created",
   "decrease": "decrease",
   "decrement": "decrement",
