@@ -17,4 +17,12 @@ const Template: ComponentStory<typeof AvatarDropdown> = (args) => <AvatarDropdow
 export const Normal = Template.bind({});
 Normal.args = {
 };
-Normal.decorators = [StoreDecorator({})];
+
+Normal.decorators = [StoreDecorator({
+  user: {
+    authData: {
+      id: '1',
+    },
+  },
+
+})];

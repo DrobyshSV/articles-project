@@ -5,7 +5,7 @@ import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDe
 import { NotificationItem } from './NotificationItem';
 
 export default {
-  title: 'entities/Notification',
+  title: 'entities/Notification/NotificationItem',
   component: NotificationItem,
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -16,6 +16,10 @@ const Template: ComponentStory<typeof NotificationItem> = (args) => <Notificatio
 
 export const Normal = Template.bind({});
 Normal.args = {
-
+  item: {
+    id: '1',
+    title: 'Rate and add feedback',
+    description: 'hello',
+  },
 };
 Normal.decorators = [StoreDecorator({})];
