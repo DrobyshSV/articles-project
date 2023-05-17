@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
-import { SizeText, Text } from '@/shared/ui/Text/Text';
+import { SizeText, Text } from '@/shared/ui/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ArticleView } from '../../model/consts/consts';
 import { Article } from '../../model/types/article';
