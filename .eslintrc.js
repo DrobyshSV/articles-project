@@ -22,7 +22,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
-    'fsh-imports-modules-control',
+    'fsd-imports-checker',
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -56,7 +56,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
-    'fsh-imports-modules-control/imports-fsh-paths-checker': 'error',
+    'fsd-imports-checker/relative-path-checker': ['error', { alias: '@' }],
   },
   globals: {
     __IS_DEV__: true,
