@@ -4,12 +4,12 @@ import React, {
   useCallback,
   useEffect,
 } from 'react';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import { useTheme } from '@/app/providers/ThemeProvider';
-import { AnimationProvider, useAnimationLibs } from '@/shared/lib/components/AnimationProvider';
+import { classNames } from '../../lib/classNames/classNames';
+import { AnimationProvider, useAnimationLibs } from '../../lib/components/AnimationProvider';
+import { useTheme } from '../../config/hooks/useTheme/useTheme';
 import { Overlay } from '../Overlay/Overlay';
-import styles from './Drawer.module.scss';
 import { Portal } from '../Portal/Portal';
+import styles from './Drawer.module.scss';
 
 interface DrawerProps {
   className?: string;
