@@ -7,7 +7,7 @@ import { Select, SelectOption } from '@/shared/ui/Select';
 
 import { ArticleSortField } from '../../model/consts/consts';
 
-import cls from './ArticleSortSelector.module.scss';
+import styles from './ArticleSortSelector.module.scss';
 
 interface ArticleSortSelectorProps {
   className?: string;
@@ -23,7 +23,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
   } = props;
   const { t } = useTranslation();
 
-  const orderOptions = useMemo<SelectOption[]>(() => [
+  const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
     {
       value: 'asc',
       content: t('increase'),
@@ -34,7 +34,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     },
   ], [t]);
 
-  const sortFieldOptions = useMemo<SelectOption[]>(() => [
+  const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(() => [
     {
       value: ArticleSortField.CREATED,
       content: t('created'),
@@ -58,19 +58,19 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
   }, [onChangeOrder]);
 
   return (
-    <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
-      <Select
+    <div className={classNames(styles.ArticleSortSelector, {}, [className])}>
+      <Select<ArticleSortField>
         options={sortFieldOptions}
         label={t('Sort BY')}
         value={sort}
-        onChange={changeSortHandler}
+        onChange={onChangeSort}
       />
-      <Select
+      <Select<SortOrder>
         options={orderOptions}
         label={t('BY')}
         value={order}
-        onChange={changeOrderHandler}
-        className={cls.order}
+        onChange={onChangeOrder}
+        className={styles.order}
       />
     </div>
   );
