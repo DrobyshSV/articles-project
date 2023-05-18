@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   getUserAuthData, isUserAdmin, isUserManager, userActions,
 } from '@/entities/User';
-import { RouterPath } from '@/shared/const/router';
+import { getRouteAdmin, getRouteProfile } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Dropdown } from '@/shared/ui/Popups';
@@ -39,11 +39,11 @@ export const AvatarDropdown = memo(({ className }: AvatarDropdownProps) => {
       items={[
         ...(isAdminPanelAvailable ? [{
           content: t('Admin'),
-          href: RouterPath.admin_panel,
+          href: getRouteAdmin(),
         }] : []),
         {
           content: t('Profile'),
-          href: RouterPath.profile + authData.id,
+          href: getRouteProfile(authData.id),
         },
         {
           content: t('Logout'),
