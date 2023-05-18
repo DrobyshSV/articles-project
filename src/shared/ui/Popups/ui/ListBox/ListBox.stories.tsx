@@ -1,6 +1,8 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react';
+
 import { StoreDecorator } from '../../../../config/storybook/StoreDecorator/StoreDecorator';
+
 import { ListBox } from './ListBox';
 
 export default {
