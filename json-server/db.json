@@ -1476,6 +1476,15 @@
         "MANAGER"
       ],
       "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
+    },
+    {
+      "id": "4",
+      "username": "drobysh",
+      "password": "123",
+      "roles": [
+        "USER"
+      ],
+      "avatar": null
     }
   ],
   "profile": [
