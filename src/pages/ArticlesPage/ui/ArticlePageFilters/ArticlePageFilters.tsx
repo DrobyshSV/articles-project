@@ -13,7 +13,7 @@ import { ArticleViewSelector } from '@/features/ArticleViewSelector';
 import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispatch';
 import { useDebounce } from '@/shared/config/hooks/useDebounce/useDebounce';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { SortOrder } from '@/shared/types';
+import { SortOrder } from '@/shared/types/sort';
 import { Card } from '@/shared/ui/Card';
 import { Input } from '@/shared/ui/Input';
 

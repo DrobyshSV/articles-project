@@ -10,7 +10,7 @@ interface AboutPageProps {
 const AboutPage = ({ className }: AboutPageProps) => {
   const { t } = useTranslation();
   return (
-    <Page className={className}>
+    <Page data-testid="AboutPage" className={className}>
       {t('AboutPage')}
     </Page>
   );

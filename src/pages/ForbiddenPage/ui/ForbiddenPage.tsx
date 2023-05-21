@@ -10,7 +10,7 @@ interface ForbiddenPageProps {
 const ForbiddenPage = ({ className }: ForbiddenPageProps) => {
   const { t } = useTranslation();
   return (
-    <Page className={className}>
+    <Page data-testid="ForbiddenPage" className={className}>
       {t('You have no access to this page ')}
     </Page>
   );
