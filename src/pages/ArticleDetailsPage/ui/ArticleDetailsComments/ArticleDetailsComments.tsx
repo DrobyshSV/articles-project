@@ -1,9 +1,10 @@
 import { memo, Suspense, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { CommentList } from '@/entities/Comment';
 import { AddCommentForm } from '@/features/addCommentForm';
+import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/config/hooks/useInitialEffect/useInitialEffect';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Loader } from '@/shared/ui/Loader';
@@ -27,7 +28,7 @@ export const ArticleDetailsComments = memo((props: ArticleDetailsCommentsProps) 
   const { t } = useTranslation();
   const comments = useSelector(getArticleComments.selectAll);
   const commentsIsLoading = useSelector(getArticleCommentsIsLoading);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const onSendComment = useCallback((text: string) => {
     dispatch(addCommentForArticle(text));
