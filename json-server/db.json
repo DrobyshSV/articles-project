@@ -1379,6 +1379,32 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Math",
+      "img": "https://vsememy.ru/kartinki/wp-content/uploads/2023/02/1643599632_3-papik-pro-p-matematika-logotip-3.png",
+      "views": 112,
+      "createdAt": "26.05.2023",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "Dg8vnEu"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Math",
+      "img": "https://vsememy.ru/kartinki/wp-content/uploads/2023/02/1643599632_3-papik-pro-p-matematika-logotip-3.png",
+      "views": 112,
+      "createdAt": "26.05.2023",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "EZtfcjp"
     }
   ],
   "comments": [
@@ -1501,14 +1527,14 @@
     },
     {
       "id": "2",
-      "firstname": "Viktar",
+      "firstname": "Siarhei",
       "lastname": "Drobysh",
-      "age": 46,
+      "age": 33,
       "currency": "BYN",
       "country": "Belarus",
       "city": "Minsk",
       "username": "admin123",
-      "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
+      "avatar": "https://thumbs.dreamstime.com/b/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg"
     }
   ],
   "notifications": [
@@ -1615,6 +1641,13 @@
       "rate": 4,
       "feedback": "2w2w",
       "id": "9Wlj1OD"
+    },
+    {
+      "userId": "2",
+      "articleId": "bby5isP",
+      "rate": 4,
+      "feedback": "feedback",
+      "id": "PXvTLmK"
     }
   ],
   "profile-ratings": [
