@@ -16,7 +16,7 @@ import { Text, ThemeText } from '@/shared/ui/Text';
 import styles from './Navbar.module.scss';
 
 interface NavbarProps {
-  className?: string
+  className?: string;
 }
 
 export const Navbar = memo(({ className }: NavbarProps) => {
@@ -63,10 +63,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
       >
         {t('Sign in')}
       </Button>
-      <LoginModal
-        isOpen={isAuthModal}
-        onClose={onCloseModal}
-      />
+      <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
     </header>
   );
 });

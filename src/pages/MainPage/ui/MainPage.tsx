@@ -5,7 +5,7 @@ import { StarRating } from '@/shared/ui/StarRating';
 import { Page } from '@/widgets/Page';
 
 interface MainPageProps {
-  className?: string
+  className?: string;
 }
 
 const MainPage = memo(({ className }: MainPageProps) => {

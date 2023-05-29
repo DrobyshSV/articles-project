@@ -44,14 +44,19 @@ export const ProfileCard = (props: ProfileCardProps) => {
     onChangeUsername,
     onChangeCountry,
     onChangeCurrency,
-
   } = props;
 
   const { t } = useTranslation();
 
   if (isLoading) {
     return (
-      <HStack justify="center" max className={classNames(styles.ProfileCard, { [styles.loading]: true }, [className])}>
+      <HStack
+        justify="center"
+        max
+        className={classNames(styles.ProfileCard, { [styles.loading]: true }, [
+          className,
+        ])}
+      >
         <Loader />
       </HStack>
     );
@@ -59,7 +64,14 @@ export const ProfileCard = (props: ProfileCardProps) => {
 
   if (error) {
     return (
-      <HStack justify="center" max className={classNames(styles.ProfileCard, {}, [className, styles.error])}>
+      <HStack
+        justify="center"
+        max
+        className={classNames(styles.ProfileCard, {}, [
+          className,
+          styles.error,
+        ])}
+      >
         <Text
           theme={ThemeText.ERROR}
           title={t('Something has gone wrong')}
@@ -74,7 +86,11 @@ export const ProfileCard = (props: ProfileCardProps) => {
     [styles.editing]: !readonly,
   };
   return (
-    <VStack gap="8" max className={classNames(styles.ProfileCard, mods, [className])}>
+    <VStack
+      gap="8"
+      max
+      className={classNames(styles.ProfileCard, mods, [className])}
+    >
       {data?.avatar && (
         <HStack justify="center" max className={styles.avatarWrapper}>
           <Avatar src={data?.avatar} />

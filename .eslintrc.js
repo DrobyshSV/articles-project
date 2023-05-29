@@ -10,6 +10,7 @@ module.exports = {
     'plugin:i18next/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    "prettier",
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -29,9 +30,6 @@ module.exports = {
     'import',
   ],
   rules: {
-    'react/jsx-indent': [2, 2],
-    'react/jsx-indent-props': [2, 2],
-    indent: [2, 2],
     'react/jsx-filename-extension': [2,
       { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
@@ -53,7 +51,6 @@ module.exports = {
         ignoreAttribute: ['as', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap'],
       },
     ],
-    'max-len': ['error', { ignoreComments: true, code: 140 }],
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
@@ -61,6 +58,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
+    'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
     'fsd-imports-checker/relative-path-checker': ['error', { alias: '@' }],
     'fsd-imports-checker/imports-between-layers': [
       'error',

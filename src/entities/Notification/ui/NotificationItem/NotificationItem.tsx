@@ -9,8 +9,8 @@ import { Notification } from '../../model/types/notification';
 import styles from './NotificationItem.module.scss';
 
 interface NotificationItemProps {
-    className?: string;
-    item: Notification
+  className?: string;
+  item: Notification;
 }
 
 export const NotificationItem = memo((props: NotificationItemProps) => {
@@ -27,7 +27,12 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
 
   if (item.href) {
     return (
-      <a className={styles.link} target="_blank" href={item.href} rel="noreferrer">
+      <a
+        className={styles.link}
+        target="_blank"
+        href={item.href}
+        rel="noreferrer"
+      >
         {content}
       </a>
     );

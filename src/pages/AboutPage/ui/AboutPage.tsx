@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
 
 interface AboutPageProps {
-  className?: string
+  className?: string;
 }
 
 const AboutPage = ({ className }: AboutPageProps) => {

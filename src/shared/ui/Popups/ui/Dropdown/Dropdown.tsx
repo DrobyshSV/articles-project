@@ -25,25 +25,29 @@ interface DropdownProps {
 }
 
 export function Dropdown(props: DropdownProps) {
-  const {
-    className, trigger, items, direction = 'bottom right',
-  } = props;
+  const { className, trigger, items, direction = 'bottom right' } = props;
 
   const menuClasses = [mapDirectionClass[direction]];
 
   return (
-    <Menu as="div" className={classNames(styles.Dropdown, {}, [className, popupStyles.popup])}>
-      <Menu.Button className={popupStyles.trigger}>
-        {trigger}
-      </Menu.Button>
+    <Menu
+      as="div"
+      className={classNames(styles.Dropdown, {}, [
+        className,
+        popupStyles.popup,
+      ])}
+    >
+      <Menu.Button className={popupStyles.trigger}>{trigger}</Menu.Button>
       <Menu.Items className={classNames(styles.menu, {}, menuClasses)}>
         {items.map((item, index) => {
-          const content = ({ active }: {active: boolean}) => (
+          const content = ({ active }: { active: boolean }) => (
             <button
               type="button"
               disabled={item.disabled}
               onClick={item.onClick}
-              className={classNames(styles.item, { [popupStyles.active]: active })}
+              className={classNames(styles.item, {
+                [popupStyles.active]: active,
+              })}
             >
               {item.content}
             </button>
@@ -51,7 +55,12 @@ export function Dropdown(props: DropdownProps) {
 
           if (item.href) {
             return (
-              <Menu.Item key={index} as={AppLink} to={item.href} disabled={item.disabled}>
+              <Menu.Item
+                key={index}
+                as={AppLink}
+                to={item.href}
+                disabled={item.disabled}
+              >
                 {content}
               </Menu.Item>
             );
@@ -63,7 +72,6 @@ export function Dropdown(props: DropdownProps) {
             </Menu.Item>
           );
         })}
-
       </Menu.Items>
     </Menu>
   );

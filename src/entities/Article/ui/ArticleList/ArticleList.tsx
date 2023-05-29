@@ -13,17 +13,22 @@ import styles from './ArticleList.module.scss';
 
 interface ArticleListProps {
   className?: string;
-  articles: Array<Article>,
+  articles: Array<Article>;
   isLoading?: boolean;
   view?: ArticleView;
   target?: HTMLAttributeAnchorTarget;
 }
 
-const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.CARDS ? 9 : 3)
-  .fill(0)
-  .map((item, index) => (
-    <ArticleListItemSkeleton className={styles.card} key={index} view={view} />
-  ));
+const getSkeletons = (view: ArticleView) =>
+  new Array(view === ArticleView.CARDS ? 9 : 3)
+    .fill(0)
+    .map((item, index) => (
+      <ArticleListItemSkeleton
+        className={styles.card}
+        key={index}
+        view={view}
+      />
+    ));
 
 export const ArticleList = memo((props: ArticleListProps) => {
   const {
@@ -38,7 +43,12 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
   if (!isLoading && !articles.length) {
     return (
-      <div className={classNames(styles.ArticleList, {}, [className, styles[view]])}>
+      <div
+        className={classNames(styles.ArticleList, {}, [
+          className,
+          styles[view],
+        ])}
+      >
         <Text size={SizeText.L} title={t('Articles not found')} />
       </div>
     );
