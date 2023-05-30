@@ -10,7 +10,7 @@ module.exports = {
     'plugin:i18next/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    "prettier",
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -30,8 +30,10 @@ module.exports = {
     'import',
   ],
   rules: {
-    'react/jsx-filename-extension': [2,
-      { extensions: ['.js', '.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'unused-imports/no-unused-imports': 'error',
@@ -48,7 +50,17 @@ module.exports = {
       'error',
       {
         markupOnly: true,
-        ignoreAttribute: ['as', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap'],
+        ignoreAttribute: [
+          'as',
+          'role',
+          'data-testid',
+          'to',
+          'target',
+          'justify',
+          'align',
+          'direction',
+          'gap',
+        ],
       },
     ],
     'jsx-a11y/no-static-element-interactions': 'off',
@@ -59,6 +71,7 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
+    'react/no-unstable-nested-components': 'warn',
     'fsd-imports-checker/relative-path-checker': ['error', { alias: '@' }],
     'fsd-imports-checker/imports-between-layers': [
       'error',
@@ -71,7 +84,11 @@ module.exports = {
       'error',
       {
         alias: '@',
-        testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx'],
+        testFilesPatterns: [
+          '**/*.test.*',
+          '**/*.stories.*',
+          '**/StoreDecorator.tsx',
+        ],
       },
     ],
     'import/order': [
