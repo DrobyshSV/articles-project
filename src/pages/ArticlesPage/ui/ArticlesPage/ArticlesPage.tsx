@@ -2,6 +2,7 @@ import React, { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 
+import { ArticlePageGreeting } from '@/features/articlePageGreeting';
 import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/config/hooks/useInitialEffect/useInitialEffect';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -48,6 +49,7 @@ const ArticlesPage = memo(({ className }: ArticlesPageProps) => {
       >
         <ArticlesPageFilters />
         <ArticleInfiniteList className={styles.list} />
+        <ArticlePageGreeting />
       </Page>
     </DynamicModuleLoader>
   );
