@@ -1,13 +1,12 @@
 import React, { memo, useCallback } from 'react';
 
 import { saveJsonSettings } from '@/entities/User';
-import DarkIcon from '@/shared/assets/icons/switcher-dark-theme-svg.svg';
-import LightIcon from '@/shared/assets/icons/switcher-light-theme-svg.svg';
+import ThemeIcon from '@/shared/assets/icons/switcher-light-theme-svg.svg';
 import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispatch';
 import { useTheme } from '@/shared/config/hooks/useTheme/useTheme';
-import { Theme } from '@/shared/const/theme';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Button, ThemeButton } from '@/shared/ui/Button';
+import { Icon } from '@/shared/ui/Icon';
 
 interface ThemeSwitcherProps {
   className?: string;
@@ -29,11 +28,7 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
       className={classNames('', {}, [className])}
       onClick={onToggleHandler}
     >
-      {theme === Theme.DARK ? (
-        <DarkIcon width="40px" height="40px" />
-      ) : (
-        <LightIcon width="40px" height="40px" />
-      )}
+      <Icon Svg={ThemeIcon} width={60} height={40} inverted />
     </Button>
   );
 });
