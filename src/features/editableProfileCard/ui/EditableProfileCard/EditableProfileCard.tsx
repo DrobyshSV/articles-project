@@ -12,8 +12,8 @@ import {
   DynamicModuleLoader,
   ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { VStack } from '@/shared/ui/Stack';
-import { Text, ThemeText } from '@/shared/ui/Text';
+import { Text, ThemeText } from '@/shared/ui/deprecated/Text';
+import { VStack } from '@/shared/ui/redesign/Stack';
 
 import { ValidateProfileError } from '../../model/consts/consts';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';

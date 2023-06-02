@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 import { ArticleList } from '@/entities/Article';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { VStack } from '@/shared/ui/Stack';
-import { Text, SizeText } from '@/shared/ui/Text';
+import { Text, SizeText } from '@/shared/ui/deprecated/Text';
+import { VStack } from '@/shared/ui/redesign/Stack';
 
 import { useArticleRecommendationsList } from '../../api/articleRecommendationsApi';
 

@@ -10,8 +10,8 @@ import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispa
 import { useDebounce } from '@/shared/config/hooks/useDebounce/useDebounce';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { SortOrder } from '@/shared/types/sort';
-import { Card } from '@/shared/ui/Card';
-import { Input } from '@/shared/ui/Input';
+import { Card } from '@/shared/ui/deprecated/Card';
+import { Input } from '@/shared/ui/deprecated/Input';
 
 import {
   getArticlesPageOrder,

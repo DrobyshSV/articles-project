@@ -3,8 +3,8 @@ import { memo } from 'react';
 import CardsGridIcon from '@/shared/assets/icons/cards-grid-icon.svg';
 import ListIcon from '@/shared/assets/icons/list-items-icon.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Button, ThemeButton } from '@/shared/ui/Button';
-import { Icon } from '@/shared/ui/Icon';
+import { Button, ThemeButton } from '@/shared/ui/deprecated/Button';
+import { Icon } from '@/shared/ui/deprecated/Icon';
 
 import { ArticleView } from '../../../entities/Article/model/consts/consts';
 
