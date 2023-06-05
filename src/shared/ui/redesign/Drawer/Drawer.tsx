@@ -1,5 +1,7 @@
 import React, { memo, ReactNode, useCallback, useEffect } from 'react';
 
+import { toggleFeatures } from '@/shared/lib/features';
+
 import { useTheme } from '../../../config/hooks/useTheme/useTheme';
 import { classNames } from '../../../lib/classNames/classNames';
 import {
@@ -81,12 +83,17 @@ export const DrawerContent = memo((props: DrawerProps) => {
   const display = y.to((py) => (py < height ? 'block' : 'none'));
 
   return (
-    <Portal>
+    <Portal element={document.getElementById('app') ?? document.body}>
       <div
         className={classNames(styles.Drawer, {}, [
           className,
           theme,
           'app_drawer',
+          toggleFeatures({
+            name: 'isAppRedesigned',
+            on: () => styles.drawerNew,
+            off: () => styles.drawerOld,
+          }),
         ])}
       >
         <Overlay onClick={close} />
