@@ -61,6 +61,8 @@ module.exports = {
           'align',
           'direction',
           'gap',
+          'color',
+          'variant',
         ],
       },
     ],

@@ -1,1 +1,26 @@
-<svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512.002 63.84C264.88 63.84 63.84 264.88 63.84 512.002c0 247.143 201.04 448.157 448.162 448.157 247.13 0 448.157-201.026 448.157-448.157C960.16 264.88 759.133 63.84 512.002 63.84z m0 843.592c-218.047 0-395.435-177.388-395.435-395.429 0-218.047 177.388-395.435 395.435-395.435 218.042 0 395.43 177.4 395.43 395.435 0 218.041-177.388 395.43-395.43 395.43z m0-474.516c-14.553 0-26.358 11.805-26.358 26.353v303.167c0 14.578 11.805 26.358 26.358 26.358 14.547 0 26.37-11.78 26.37-26.358V459.269c0-14.548-11.822-26.353-26.37-26.353z m-52.733-131.818c0-29.115 23.614-52.73 52.733-52.73 29.127 0 52.728 23.615 52.728 52.73 0 29.118-23.6 52.728-52.728 52.728-29.12 0-52.733-23.597-52.733-52.728z m0 0"  /></svg>
+<?xml version="1.0" ?>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<title/>
+
+<g id="Complete">
+
+<g id="info-circle">
+
+<g>
+
+<circle cx="12" cy="12" fill="none" id="_--Circle" r="10" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+<line fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="12" y2="16"/>
+
+<line fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="8" y2="8"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>

@@ -55,6 +55,8 @@
   "decrement": "decrement",
   "increase": "increase",
   "increment": "increment",
+  "lang": "EN",
+  "language": "English",
   "throw error": "throw error",
   "title": "title",
   "views": "views"

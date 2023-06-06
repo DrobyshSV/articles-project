@@ -55,6 +55,8 @@
   "decrement": "decrement",
   "increase": "increase",
   "increment": "increment",
+  "lang": "RU",
+  "language": "Русский",
   "throw error": "throw error",
   "title": "title",
   "views": "views"

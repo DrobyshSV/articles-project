@@ -1,13 +1,14 @@
 import React, { memo, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 import { LangSwitcher } from '@/features/LangSwitcher';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
+import ArrowIconSidebar from '@/shared/assets/icons/arrow-bottom-icon.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Button, ButtonSize, ThemeButton } from '@/shared/ui/deprecated/Button';
 import { AppLogo } from '@/shared/ui/redesign/AppLogo';
+import { Icon } from '@/shared/ui/redesign/Icon';
 import { VStack } from '@/shared/ui/redesign/Stack';
 
 import { getSidebarItems } from '../../model/selectors/getSidebarItems';
@@ -20,7 +21,6 @@ interface SidebarProps {
 }
 
 export const Sidebar = memo(({ className }: SidebarProps) => {
-  const { t } = useTranslation();
   const [collapsed, setCollapsed] = useState(false);
   const sidebarItemsList = useSelector(getSidebarItems);
 
@@ -44,11 +44,25 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
           data-testid="sidebar"
           className={classNames(
             styles.SidebarRedesigned,
-            { [styles.collapsed]: collapsed },
+            { [styles.collapsedRedesigned]: collapsed },
             [className],
           )}
         >
-          <AppLogo className={styles.appLogo} />
+          <AppLogo className={styles.appLogo} size={collapsed ? 30 : 50} />
+          <VStack role="navigation" gap="8" className={styles.items}>
+            {itemsList}
+          </VStack>
+          <Icon
+            data-testid="sidebar-toggle"
+            className={styles.collapseBtn}
+            onClick={collapsedHandler}
+            Svg={ArrowIconSidebar}
+            clickable
+          />
+          <div className={styles.switchers}>
+            <ThemeSwitcher />
+            <LangSwitcher short={collapsed} className={styles.lang} />
+          </div>
         </aside>
       }
       off={
