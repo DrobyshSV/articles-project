@@ -4,7 +4,7 @@ import { Fragment, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 
-import { AppLink } from '../../../AppLink/AppLink';
+import { AppLink } from '../../../AppLink';
 import { mapDirectionClass } from '../../styles/consts';
 import popupStyles from '../../styles/popup.module.scss';
 
@@ -46,7 +46,7 @@ export function Dropdown(props: DropdownProps) {
               disabled={item.disabled}
               onClick={item.onClick}
               className={classNames(styles.item, {
-                [popupStyles.active]: active,
+                [styles.active]: active,
               })}
             >
               {item.content}

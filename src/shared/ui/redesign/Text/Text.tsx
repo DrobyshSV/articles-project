@@ -1,69 +1,69 @@
 import { memo } from 'react';
 
-import { classNames, Mods } from '@/shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 
 import styles from './Text.module.scss';
 
-export enum ThemeText {
-  PRIMARY = 'primary',
-  INVERTED = 'inverted',
-  ERROR = 'error',
-}
-export enum AlignText {
-  RIGHT = 'right',
-  LEFT = 'left',
-  CENTER = 'center',
-}
+export type TextVariant = 'primary' | 'error' | 'accent';
 
-export enum SizeText {
-  S = 'size_s',
-  M = 'size_m',
-  L = 'size_l',
-}
+export type TextAlign = 'right' | 'left' | 'center';
+
+export type TextSize = 's' | 'm' | 'l';
 
 interface TextProps {
   className?: string;
   title?: string;
   text?: string;
-  theme?: ThemeText;
-  align?: AlignText;
-  size?: SizeText;
+  variant?: TextVariant;
+  align?: TextAlign;
+  size?: TextSize;
+  bold?: boolean;
   'data-testid'?: string;
 }
 
 type HeaderTagType = 'h1' | 'h2' | 'h3';
 
-const mapSizeToHeaderTag: Record<SizeText, HeaderTagType> = {
-  [SizeText.S]: 'h3',
-  [SizeText.M]: 'h2',
-  [SizeText.L]: 'h1',
+const mapSizeToClass: Record<TextSize, string> = {
+  s: styles.size_s,
+  m: styles.size_m,
+  l: styles.size_l,
 };
 
-/**
- * Deprecated, use new components from the redesigned folder
- * @deprecated
- */
+const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
+  s: 'h3',
+  m: 'h2',
+  l: 'h1',
+};
+
 export const Text = memo((props: TextProps) => {
   const {
     className,
     text,
     title,
-    theme = ThemeText.PRIMARY,
-    align = AlignText.LEFT,
-    size = SizeText.M,
+    variant = 'primary',
+    align = 'left',
+    size = 'm',
+    bold,
     'data-testid': dataTestId = 'Text',
   } = props;
 
   const HeaderTag = mapSizeToHeaderTag[size];
-
-  const mods: Mods = {
-    [styles[theme]]: true,
-    [styles[align]]: true,
-    [styles[size]]: true,
-  };
+  const sizeClass = mapSizeToClass[size];
+  const additionalClasses = [
+    className,
+    styles[variant],
+    styles[align],
+    sizeClass,
+  ];
 
   return (
-    <div className={classNames(styles.Text, mods, [className])}>
+    <div
+      className={classNames(
+        styles.Text,
+        { [styles.bold]: bold },
+        additionalClasses,
+      )}
+    >
       {title && (
         <HeaderTag
           className={styles.title}
