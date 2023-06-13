@@ -7,9 +7,9 @@ import ArrowIconSidebar from '@/shared/assets/icons/arrow-bottom-icon.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Button, ButtonSize, ThemeButton } from '@/shared/ui/deprecated/Button';
-import { AppLogo } from '@/shared/ui/redesign/AppLogo';
-import { Icon } from '@/shared/ui/redesign/Icon';
-import { VStack } from '@/shared/ui/redesign/Stack';
+import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
+import { Icon } from '@/shared/ui/redesigned/Icon';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 
 import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../SidebarItem/SidebarItem';

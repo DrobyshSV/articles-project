@@ -9,7 +9,7 @@ import { useInitialEffect } from '@/shared/config/hooks/useInitialEffect/useInit
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { Text, SizeText } from '@/shared/ui/deprecated/Text';
-import { VStack } from '@/shared/ui/redesign/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';

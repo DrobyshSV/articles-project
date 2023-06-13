@@ -7,7 +7,7 @@ import {
   Button as ButtonDeprecated,
   ThemeButton,
 } from '@/shared/ui/deprecated/Button';
-import { Button } from '@/shared/ui/redesign/Button';
+import { Button } from '@/shared/ui/redesigned/Button';
 
 interface LangSwitcherProps {
   className?: string;

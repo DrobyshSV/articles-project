@@ -12,7 +12,7 @@ import {
   ThemeButton,
 } from '@/shared/ui/deprecated/Button';
 import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
-import { Icon } from '@/shared/ui/redesign/Icon';
+import { Icon } from '@/shared/ui/redesigned/Icon';
 
 const t = ThemeIconDeprecated;
 interface ThemeSwitcherProps {

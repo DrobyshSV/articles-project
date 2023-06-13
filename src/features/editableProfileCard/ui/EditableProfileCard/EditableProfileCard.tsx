@@ -13,7 +13,7 @@ import {
   ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { Text, ThemeText } from '@/shared/ui/deprecated/Text';
-import { VStack } from '@/shared/ui/redesign/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 
 import { ValidateProfileError } from '../../model/consts/consts';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';

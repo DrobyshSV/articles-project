@@ -10,7 +10,7 @@ import {
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { Button, ThemeButton } from '@/shared/ui/deprecated/Button';
 import { Input } from '@/shared/ui/deprecated/Input';
-import { HStack } from '@/shared/ui/redesign/Stack';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 import {
   getAddCommentFormError,

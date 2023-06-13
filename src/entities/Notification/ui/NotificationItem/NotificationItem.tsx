@@ -4,8 +4,8 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Card as CardDeprecated, ThemeCard } from '@/shared/ui/deprecated/Card';
 import { Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
-import { Card } from '@/shared/ui/redesign/Card';
-import { Text } from '@/shared/ui/redesign/Text';
+import { Card } from '@/shared/ui/redesigned/Card';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 import { Notification } from '../../model/types/notification';
 

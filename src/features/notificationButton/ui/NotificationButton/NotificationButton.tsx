@@ -12,9 +12,9 @@ import {
 } from '@/shared/ui/deprecated/Button';
 import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
 import { Popover as PopoverDeprecated } from '@/shared/ui/deprecated/Popups';
-import { Drawer } from '@/shared/ui/redesign/Drawer';
-import { Icon } from '@/shared/ui/redesign/Icon';
-import { Popover } from '@/shared/ui/redesign/Popups';
+import { Drawer } from '@/shared/ui/redesigned/Drawer';
+import { Icon } from '@/shared/ui/redesigned/Icon';
+import { Popover } from '@/shared/ui/redesigned/Popups';
 
 import styles from './NotificationButton.module.scss';
 

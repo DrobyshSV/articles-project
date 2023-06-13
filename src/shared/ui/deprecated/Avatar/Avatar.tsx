@@ -3,7 +3,7 @@ import { CSSProperties, useMemo } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 
 import UserIcon from '../../../assets/icons/avatar-icon.svg';
-import { AppImage } from '../../redesign/AppImage';
+import { AppImage } from '../../redesigned/AppImage';
 import { Icon } from '../Icon';
 import { Skeleton } from '../Skeleton';
 

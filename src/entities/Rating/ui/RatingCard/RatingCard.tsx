@@ -8,9 +8,9 @@ import { Card } from '@/shared/ui/deprecated/Card';
 import { Input } from '@/shared/ui/deprecated/Input';
 import { StarRating } from '@/shared/ui/deprecated/StarRating';
 import { Text } from '@/shared/ui/deprecated/Text';
-import { Drawer } from '@/shared/ui/redesign/Drawer';
-import { Modal } from '@/shared/ui/redesign/Modal';
-import { HStack, VStack } from '@/shared/ui/redesign/Stack';
+import { Drawer } from '@/shared/ui/redesigned/Drawer';
+import { Modal } from '@/shared/ui/redesigned/Modal';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 
 interface RatingCardProps {
   className?: string;

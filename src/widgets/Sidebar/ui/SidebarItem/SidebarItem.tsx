@@ -9,8 +9,8 @@ import {
   AppLink as AppLinkDeprecated,
   AppLinkTheme,
 } from '@/shared/ui/deprecated/AppLink';
-import { AppLink } from '@/shared/ui/redesign/AppLink';
-import { Icon } from '@/shared/ui/redesign/Icon';
+import { AppLink } from '@/shared/ui/redesigned/AppLink';
+import { Icon } from '@/shared/ui/redesigned/Icon';
 
 import { SidebarItemType } from '../../model/types/sidebar';
 

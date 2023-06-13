@@ -18,8 +18,8 @@ import {
   ThemeButton,
 } from '@/shared/ui/deprecated/Button';
 import { Text as TextDeprecated, ThemeText } from '@/shared/ui/deprecated/Text';
-import { Button } from '@/shared/ui/redesign/Button';
-import { HStack } from '@/shared/ui/redesign/Stack';
+import { Button } from '@/shared/ui/redesigned/Button';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 import styles from './Navbar.module.scss';
 

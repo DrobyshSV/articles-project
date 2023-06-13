@@ -14,7 +14,7 @@ import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Icon } from '@/shared/ui/deprecated/Icon';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Text, AlignText, SizeText } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/redesign/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 
 import { ArticleBlockType } from '../../model/consts/consts';
 import {

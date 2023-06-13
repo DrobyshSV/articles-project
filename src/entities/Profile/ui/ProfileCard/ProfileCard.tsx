@@ -7,7 +7,7 @@ import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Input } from '@/shared/ui/deprecated/Input';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { AlignText, Text, ThemeText } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/redesign/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 
 import { Profile } from '../../model/types/profile';
 

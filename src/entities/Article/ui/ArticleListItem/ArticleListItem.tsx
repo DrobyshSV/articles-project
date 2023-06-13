@@ -11,7 +11,7 @@ import { Card } from '@/shared/ui/deprecated/Card';
 import { Icon } from '@/shared/ui/deprecated/Icon';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Text } from '@/shared/ui/deprecated/Text';
-import { AppImage } from '@/shared/ui/redesign/AppImage';
+import { AppImage } from '@/shared/ui/redesigned/AppImage';
 
 import { ArticleBlockType, ArticleView } from '../../model/consts/consts';
 import { Article, ArticleTextBlock } from '../../model/types/article';

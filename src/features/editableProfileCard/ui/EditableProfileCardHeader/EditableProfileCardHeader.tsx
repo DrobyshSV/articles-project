@@ -7,7 +7,7 @@ import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispa
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Button, ThemeButton } from '@/shared/ui/deprecated/Button';
 import { Text } from '@/shared/ui/deprecated/Text';
-import { HStack } from '@/shared/ui/redesign/Stack';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
