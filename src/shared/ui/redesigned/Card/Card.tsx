@@ -29,7 +29,7 @@ export const Card = memo((props: CardProps) => {
   const {
     className,
     children,
-    variant = 'variant',
+    variant = 'normal',
     max,
     padding = '8',
     border = 'normal',

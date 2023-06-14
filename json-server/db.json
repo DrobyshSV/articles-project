@@ -20,9 +20,7 @@
       "views": 333,
       "createdAt": "20.04.2021",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -92,9 +90,7 @@
       "views": 5,
       "createdAt": "01.04.2020",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -164,9 +160,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -236,9 +230,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -308,9 +300,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -380,9 +370,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -452,9 +440,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -524,9 +510,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -596,9 +580,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -668,9 +650,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -740,9 +720,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -812,9 +790,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -884,9 +860,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -956,9 +930,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -1028,9 +1000,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -1100,9 +1070,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -1172,9 +1140,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -1244,9 +1210,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -1316,9 +1280,7 @@
       "views": 1022,
       "createdAt": "20.04.2023",
       "userId": "1",
-      "type": [
-        "IT"
-      ],
+      "type": ["IT"],
       "blocks": [
         {
           "id": "1",
@@ -1387,9 +1349,7 @@
       "views": 112,
       "createdAt": "26.05.2023",
       "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
+      "type": ["SCIENCE"],
       "blocks": [],
       "id": "Dg8vnEu"
     },
@@ -1400,9 +1360,7 @@
       "views": 112,
       "createdAt": "26.05.2023",
       "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
+      "type": ["SCIENCE"],
       "blocks": [],
       "id": "EZtfcjp"
     }
@@ -1473,6 +1431,12 @@
       "userId": "1",
       "text": "xsxs",
       "id": "5bCDJzB"
+    },
+    {
+      "articleId": "2",
+      "userId": "1",
+      "text": "ff",
+      "id": "DX6ViTd"
     }
   ],
   "users": [
@@ -1480,16 +1444,14 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
+      "roles": ["ADMIN"],
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true,
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -1500,9 +1462,7 @@
       "id": "2",
       "username": "user",
       "password": "123",
-      "roles": [
-        "USER"
-      ],
+      "roles": ["USER"],
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": false
@@ -1517,9 +1477,7 @@
       "id": "3",
       "username": "manager",
       "password": "123",
-      "roles": [
-        "MANAGER"
-      ],
+      "roles": ["MANAGER"],
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
@@ -1530,9 +1488,7 @@
       "id": "4",
       "username": "drobysh",
       "password": "123",
-      "roles": [
-        "USER"
-      ],
+      "roles": ["USER"],
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true

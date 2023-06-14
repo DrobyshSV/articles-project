@@ -22,3 +22,10 @@
   background: var(--light-bg-redesigned);
 }
 
+.active {
+  background: var(--light-bg-redesigned);
+}
+
+.disabled {
+  opacity: 0.7;
+}

@@ -1,15 +1,18 @@
 import { Listbox as HListBox } from '@headlessui/react';
 import { Fragment, ReactNode, useMemo } from 'react';
 
+import ArrowIcon from '@/shared/assets/icons/arrow-bottom-icon.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 
 import { Button } from '../../../Button';
+import { Icon } from '../../../Icon';
 import { HStack } from '../../../Stack';
 import { mapDirectionClass } from '../../styles/consts';
 import popupStyles from '../../styles/popup.module.scss';
 
 import styles from './ListBox.module.scss';
+
 
 export interface ListBoxItem<T extends string> {
   value: string;
@@ -63,8 +66,9 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
         <HListBox.Button
           as={Button}
           variant="filled"
-          /* disabled={readonly} */
-          /* addonRight={<Icon Svg={ArrowIcon} />} */
+          // @ts-ignore
+          disabled={readonly}
+          addonRight={<Icon Svg={ArrowIcon} />}
         >
           {selectedItem?.content ?? defaultValue}
         </HListBox.Button>
@@ -80,11 +84,15 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
             >
               {({ active, selected }) => (
                 <li
-                  className={classNames(styles.item, {
-                    [popupStyles.active]: active,
-                    [popupStyles.disabled]: item.disabled,
-                    [popupStyles.selected]: selected,
-                  })}
+                  className={classNames(
+                    styles.item,
+                    {
+                      [styles.active]: active,
+                      [styles.disabled]: item.disabled,
+                      [styles.selected]: selected,
+                    },
+                    [popupStyles.trigger],
+                  )}
                 >
                   {selected}
                   {item.content}
