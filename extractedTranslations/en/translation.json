@@ -1,6 +1,7 @@
 {
   "AboutPage": "AboutPage",
   "Add comment": "Add comment",
+  "Add link of avata": "",
   "Add link of avatar": "Add link of avatar",
   "Add password": "Add password",
   "Add user name": "Add user name",
@@ -78,7 +79,9 @@
   "title": "title",
   "views": "views",
   "Оценка статей скоро появится!": "",
+  "Профиль": "",
   "Профиль не найден": "Профиль не найден",
+  "Укажите валюту": "",
   "Читать далее": {
     "": {
       "": {
