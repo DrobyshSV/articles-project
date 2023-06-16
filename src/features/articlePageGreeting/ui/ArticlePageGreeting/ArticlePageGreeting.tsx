@@ -4,9 +4,11 @@ import { useTranslation } from 'react-i18next';
 
 import { saveJsonSettings, useJsonSettings } from '@/entities/User';
 import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispatch';
-import { Text } from '@/shared/ui/deprecated/Text';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
 import { Drawer } from '@/shared/ui/redesigned/Drawer';
 import { Modal } from '@/shared/ui/redesigned/Modal';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 export const ArticlePageGreeting = memo(() => {
   const { t } = useTranslation();
@@ -24,9 +26,20 @@ export const ArticlePageGreeting = memo(() => {
   const onClose = () => setIsOpen(false);
 
   const text = (
-    <Text
-      title={t('Welcome to Articles Page')}
-      text={t('Here you can search and view articles on various topics')}
+    <ToggleFeatures
+      feature="isAppRedesigned"
+      on={
+        <Text
+          title={t('Welcome to Articles Page')}
+          text={t('Here you can search and view articles on various topics')}
+        />
+      }
+      off={
+        <TextDeprecated
+          title={t('Welcome to Articles Page')}
+          text={t('Here you can search and view articles on various topics')}
+        />
+      }
     />
   );
 

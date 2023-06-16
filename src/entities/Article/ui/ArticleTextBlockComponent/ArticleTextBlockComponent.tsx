@@ -2,7 +2,9 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text } from '@/shared/ui/deprecated/Text';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 import { ArticleTextBlock } from '../../model/types/article';
 
@@ -24,9 +26,33 @@ export const ArticleTextBlockComponent = memo(
           className,
         ])}
       >
-        {block.title && <Text title={block.title} className={styles.title} />}
+        {block.title && (
+          <ToggleFeatures
+            feature="isAppRedesigned"
+            on={<Text title={block.title} className={styles.title} />}
+            off={
+              <TextDeprecated title={block.title} className={styles.title} />
+            }
+          />
+        )}
         {block.paragraphs.map((paragraph, index) => (
-          <Text key={paragraph} text={paragraph} className={styles.paragraph} />
+          <ToggleFeatures
+            feature="isAppRedesigned"
+            on={
+              <Text
+                key={paragraph}
+                text={paragraph}
+                className={styles.paragraph}
+              />
+            }
+            off={
+              <TextDeprecated
+                key={paragraph}
+                text={paragraph}
+                className={styles.paragraph}
+              />
+            }
+          />
         ))}
       </div>
     );

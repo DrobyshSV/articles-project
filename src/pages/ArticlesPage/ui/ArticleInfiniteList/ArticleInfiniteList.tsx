@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 import { ArticleList } from '@/entities/Article';
-import { Text } from '@/shared/ui/deprecated/Text';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 import {
   getArticlesPageError,
@@ -26,7 +28,13 @@ export const ArticleInfiniteList = memo(
     const error = useSelector(getArticlesPageError);
 
     if (error) {
-      return <Text text={t('Article load error')} />;
+      return (
+        <ToggleFeatures
+          feature="isAppRedesigned"
+          on={<Text text={t('Article load error')} />}
+          off={<TextDeprecated text={t('Article load error')} />}
+        />
+      );
     }
 
     return (

@@ -101,3 +101,16 @@
     text-overflow: ellipsis;
   }
 }
+
+.ArticleListItemRedesigned {
+  &.LIST {
+    width: 100%;
+  }
+
+  &.CARDS {
+    .card {
+      height: 350px;
+      width: 240px;
+    }
+  }
+}

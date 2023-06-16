@@ -1,5 +1,4 @@
 import React, { memo, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 
 import { ArticlePageGreeting } from '@/features/articlePageGreeting';
@@ -32,7 +31,6 @@ const reducers: ReducersList = {
 };
 
 const ArticlesPage = memo(({ className }: ArticlesPageProps) => {
-  const { t } = useTranslation();
   const dispatch = useAppDispatch();
   const [searchParams] = useSearchParams();
 

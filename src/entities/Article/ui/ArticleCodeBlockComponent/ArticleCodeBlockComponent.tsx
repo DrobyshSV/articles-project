@@ -6,7 +6,7 @@ import { Code } from '@/shared/ui/redesigned/Code';
 
 import { ArticleCodeBlock } from '../../model/types/article';
 
-import cls from './ArticleCodeBlockComponent.module.scss';
+import styles from './ArticleCodeBlockComponent.module.scss';
 
 interface ArticleCodeBlockComponentProps {
   className?: string;
@@ -20,7 +20,9 @@ export const ArticleCodeBlockComponent = memo(
 
     return (
       <div
-        className={classNames(cls.ArticleCodeBlockComponent, {}, [className])}
+        className={classNames(styles.ArticleCodeBlockComponent, {}, [
+          className,
+        ])}
       >
         <Code text={block.code} />
       </div>
