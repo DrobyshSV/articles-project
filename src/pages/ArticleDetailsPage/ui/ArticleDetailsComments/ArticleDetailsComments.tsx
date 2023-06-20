@@ -7,9 +7,11 @@ import { AddCommentForm } from '@/features/addCommentForm';
 import { useAppDispatch } from '@/shared/config/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/config/hooks/useInitialEffect/useInitialEffect';
 import { classNames } from '@/shared/lib/classNames/classNames';
+import { ToggleFeatures } from '@/shared/lib/features';
 import { Loader } from '@/shared/ui/deprecated/Loader';
-import { Text, SizeText } from '@/shared/ui/deprecated/Text';
+import { Text as TextDeprecated, SizeText } from '@/shared/ui/deprecated/Text';
 import { VStack } from '@/shared/ui/redesigned/Stack';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
@@ -42,7 +44,11 @@ export const ArticleDetailsComments = memo(
 
     return (
       <VStack gap="16" max className={classNames('', {}, [className])}>
-        <Text size={SizeText.L} title={t('Comments')} />
+        <ToggleFeatures
+          feature="isAppRedesigned"
+          on={<Text size="l" title={t('Comments')} />}
+          off={<TextDeprecated size={SizeText.L} title={t('Comments')} />}
+        />
         <Suspense fallback={<Loader />}>
           <AddCommentForm onSendComment={onSendComment} />
         </Suspense>

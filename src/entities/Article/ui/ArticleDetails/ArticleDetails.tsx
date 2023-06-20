@@ -70,6 +70,7 @@ const ContentDeprecated = () => {
     </>
   );
 };
+
 const ContentRedesign = () => {
   const article = useSelector(getArticleDetailsData);
   return (
