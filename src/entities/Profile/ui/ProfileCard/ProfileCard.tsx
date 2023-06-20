@@ -1,36 +1,19 @@
 import { useTranslation } from 'react-i18next';
 
-import { Country } from '@/entities/Country';
-import { Currency } from '@/entities/Currency';
 import { ToggleFeatures } from '@/shared/lib/features';
 
-import { Profile } from '../../model/types/profile';
-import {
-  ProfileCardRedesigned,
-  ProfileCardRedesignedError,
-  ProfileCardRedesignedSkeleton,
-} from '../ProfileCardDRedesigned/ProfileCardDRedesigned';
 import {
   ProfileCardDeprecated,
   ProfileCardDeprecatedError,
   ProfileCardDeprecatedLoader,
 } from '../ProfileCardDeprecated/ProfileCardDeprecated';
+import {
+  ProfileCardRedesigned,
+  ProfileCardRedesignedError,
+  ProfileCardRedesignedSkeleton,
+} from '../ProfileCardRedesigned/ProfileCardRedesigned';
 
-export interface ProfileCardProps {
-  className?: string;
-  data?: Profile;
-  isLoading?: boolean;
-  error?: string;
-  readonly?: boolean;
-  onChangeLastname?: (value?: string) => void;
-  onChangeFirstname?: (value?: string) => void;
-  onChangeCity?: (value?: string) => void;
-  onChangeAge?: (value?: string) => void;
-  onChangeUsername?: (value?: string) => void;
-  onChangeAvatar?: (value?: string) => void;
-  onChangeCurrency?: (currency: Currency) => void;
-  onChangeCountry?: (country: Country) => void;
-}
+import { ProfileCardProps } from './ProfileCardProps';
 
 export const ProfileCard = (props: ProfileCardProps) => {
   const { isLoading, error } = props;

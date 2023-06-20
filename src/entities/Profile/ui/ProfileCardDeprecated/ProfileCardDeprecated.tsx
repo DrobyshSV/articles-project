@@ -13,7 +13,7 @@ import {
 } from '@/shared/ui/deprecated/Text';
 import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 
-import { ProfileCardProps } from '../ProfileCard/ProfileCard';
+import { ProfileCardProps } from '../ProfileCard/ProfileCardProps';
 
 import styles from './ProfileCardDeprecated.module.scss';
 

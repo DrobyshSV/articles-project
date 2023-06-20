@@ -10,7 +10,7 @@ import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Text } from '@/shared/ui/redesigned/Text';
 
-import { ProfileCardProps } from '../ProfileCard/ProfileCard';
+import { ProfileCardProps } from '../ProfileCard/ProfileCardProps';
 
 export const ProfileCardRedesignedError = () => {
   const { t } = useTranslation();
