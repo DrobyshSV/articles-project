@@ -82,7 +82,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
   }
 
   return (
-    <header className={classNames(styles.Navbar, {}, [className])}>
+    <header className={classNames(mainClass, {}, [className])}>
       <ToggleFeatures
         feature="isAppRedesigned"
         on={
