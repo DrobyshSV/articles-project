@@ -83,14 +83,14 @@ export const ProfileCardRedesigned = memo((props: ProfileCardProps) => {
               label={t('Your First Name')}
               onChange={onChangeFirstname}
               readonly={readonly}
-              data-testid="ProfileCardDeprecated.firstname"
+              data-testid="ProfileCard.firstname"
             />
             <Input
               value={data?.lastname}
               label={t('Your Last Name')}
               onChange={onChangeLastname}
               readonly={readonly}
-              data-testid="ProfileCardDeprecated.lastname"
+              data-testid="ProfileCard.lastname"
             />
             <Input
               value={data?.age}

@@ -13,7 +13,6 @@ import popupStyles from '../../styles/popup.module.scss';
 
 import styles from './ListBox.module.scss';
 
-
 export interface ListBoxItem<T extends string> {
   value: string;
   content: ReactNode;

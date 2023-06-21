@@ -9,7 +9,7 @@
     "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
     "start:vite": "vite",
     "start:dev:vite": "concurrently \"npm run start:vite\" \"npm run start:dev:server\"",
-    "build:prod": "webpack --env mode=production apiUrl=https://puce-brave-lemur.cyclic.app",
+    "build:prod": "webpack --env mode=production apiUrl=https://fakeserverarticles-austin.b4a.run/",
     "build:dev": "webpack --env mode=development",
     "lint:ts": "eslint \"./src/**/*.{ts,tsx}\"",
     "lint:ts:fix": "eslint \"./src/**/*.{ts,tsx}\" --fix",

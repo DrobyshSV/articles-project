@@ -44,9 +44,7 @@ describe('app/router/AppRouter', () => {
       initialState: {
         user: {
           _inited: true,
-          authData: {
-            id: '1',
-          },
+          authData: {},
         },
       },
     });
@@ -54,7 +52,6 @@ describe('app/router/AppRouter', () => {
     const page = await screen.findByTestId('ProfilePage');
     expect(page).toBeInTheDocument();
   });
-
   test('Access denied (role missing)', async () => {
     componentRender(<AppRouter />, {
       route: getRouteAdmin(),

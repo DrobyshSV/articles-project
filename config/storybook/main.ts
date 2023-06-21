@@ -56,7 +56,7 @@ export default {
     config!.plugins!.push(
       new DefinePlugin({
         __IS_DEV__: JSON.stringify(true),
-        __API__: JSON.stringify('https://testapi.ru'),
+        __API__: JSON.stringify('https://fakeserverarticles-austin.b4a.run/'),
         __PROJECT__: JSON.stringify('storybook'),
       }),
     );
